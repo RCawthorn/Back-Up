@@ -1,0 +1,91 @@
+<HTML>
+<title> Look im a browser</title>
+<h1> <b> <u>This is a webpage</h1> </u></b>
+<A href="http://www.hotmail.com">Hotmail</a>
+<br>
+<A href="http://www.gmail.com">Gmail</a>
+<br>
+<A href="http://www.bbc.com">BBC</a>
+<br>
+Enter your name:<input type="Text">
+<input type="button" value="click">
+<br>
+
+<br>
+<script>
+function showmessage(){
+window.alert("Hello myFriends");}
+</script>
+<b>Nationwide</b>
+<input type="button" value ="click" onclick="ShowMessage()">
+<br>
+<script>
+function process(){
+
+var ref=window.document.getElementById("abc");
+ref.value="hello my friends";
+}
+function process2(){
+
+var ref=window.document.getElementById("abc");
+ref.value="Stop clicking";
+}
+</script>
+<input type="text" id="abc">
+<br>
+<input type="button" id="xyz" value="Click on me" onclick="process()">
+<br>
+<input type="button" id="asd" value="No, Click on me" onclick="process2()">
+<br>
+<br>
+<br>
+<h2><font color="red">This is my calculator</h2></font>
+<script>
+function Addiction(){
+var ref1=window.document.getElementById("T1");
+var ref2=window.document.getElementById("T2");
+var ref3=window.document.getElementById("T3");
+var no1= parseInt(ref1.value);
+var no2= parseInt(ref2.value);
+var Result= no1+no2;
+ref3.value=Result;
+}
+
+function Subtraction(){
+var ref1=window.document.getElementById("T1");
+var ref2=window.document.getElementById("T2");
+var ref3=window.document.getElementById("T3");
+var no1= parseInt(ref1.value);
+var no2= parseInt(ref2.value);
+var Result= no1-no2;
+ref3.value=Result;
+}
+function Multiply(){
+var ref1=window.document.getElementById("T1");
+var ref2=window.document.getElementById("T2");
+var ref3=window.document.getElementById("T3");
+var no1= parseInt(ref1.value);
+var no2= parseInt(ref2.value);
+var Result= no1*no2;
+ref3.value=Result;
+}
+function Divide(){
+var ref1=window.document.getElementById("T1");
+var ref2=window.document.getElementById("T2");
+var ref3=window.document.getElementById("T3");
+var no1= parseInt(ref1.value);
+var no2= parseInt(ref2.value);
+var Result= no1/no2;
+ref3.value=Result;
+
+}
+</script>
+
+First Number: <input type="Text" id="T1"><br>
+Second Number: 	<input type="Text" id="T2"><br>
+<input type="button" id="B1" value="+" onclick="Addiction()">
+<input type="button" id="B1" value="-" onclick="Subtraction()">
+<input type="button" id="B1" value="*" onclick="Multiply()">
+<input type="button" id="B1" value="/" onclick="Divide()"><br>
+Result:	<input type="Text" id="T3"><br>
+</html>

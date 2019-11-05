@@ -1,0 +1,21 @@
+class QAMaths{
+public static void main(String xyz[]){
+
+int no1, no2;
+float Result;
+String sign;
+
+try{
+	no1=Integer.Parseint(xyz[0]);
+	no2 = Integer.Parseint(xyz[2]);
+	sign=xyz[1];
+			if(sign.equals("/"){
+			Result=no1/no2;
+			}
+System.out.println("Result " + Result);
+}
+catch(Arrayindexoutofboundsexception x){
+System.out.println("Please send 3 values");
+}
+catch(Arithmaticexception){
+}

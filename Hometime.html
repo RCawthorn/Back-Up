@@ -1,0 +1,151 @@
+<html>
+ <body>
+<div class="bgimg">
+  <div class="">
+  <b>
+  </div>
+  <div class="middle">
+    <h1>Hometime</h1>
+    <hr>
+    <p id="demo" style="font-size:40px"></p>
+	<input class="home" type = "button" value = "Is it hometime?" id ="Hometime" onclick = "homeTime()">
+  </div>
+  <div class="tag">Made by Lord Cawthorn</b>
+  </div>
+</div>
+<style> 
+div {
+  position: relative;
+  animation: myfirst 5s linear 3s infinite alternate;
+   animation-iteration-count:5;
+}
+
+<!-- /* Safari 4.0 - 8.0 */ -->
+<!-- @-webkit-keyframes myfirst { -->
+  <!-- 0%   {background-color:red; left:0px; top:0px;} -->
+  <!-- 25%  {background-color:yellow; left:400px; top:0px;} -->
+  <!-- 50% {background-color:blue; left:200px; top:200px;} -->
+  <!-- 65%  {background-color:green; left:50px; top:200px;} -->
+   <!-- 75% {background-color:green; left:0px; top:200px;} -->
+  <!-- 100% {background-color:red; left:0px; top:0px;} -->
+<!-- } -->
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  10%  {background-color:yellow; left:400px; top:0px;}
+  25% {background-color:blue; left:0px; top:200px;}
+ 40%  {background-color:green; left:50px; top:200px;}
+  55% {background-color:green; left:400px; top:100px;}
+  70% {background-color:red; left300px; top:0px;}
+  85%{background-color:green; left:0px; top:200px;}
+  100%{background-color:blue; left:200px; top:200px;}
+}
+.div:hover{
+position:middle;
+}
+
+</style><div></div>
+<style>
+
+
+
+  body {
+        background-color: orange;
+      }
+	  .tag{position: absolute;
+		top: 560;
+	  
+	  }
+	  .middle{
+position: absolute;
+top: 100;
+  left:450px;
+  font-size:50px;
+  color: Black;
+  text-shadow:9px 2px 5px #ffffff;
+	  }
+	  .home{
+	  	  position: absolute;
+top: 150;
+  left:450px;
+
+	  }
+body, html {
+  height: 100%;
+  margin: 0;
+  </style>
+
+
+<script>
+function myTimer() {
+  setInterval(function(){ alert("Hello"); }, 3000);
+}
+function homeTime(){
+var Ref1 = document.getElementById("homeTime");
+alert("NO");
+}
+// Set the date
+var countDownDate = new Date("October 25, 2019 17:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+ // Get date and time
+  var now = new Date().getTime();
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+ 
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "HOMETIME!";
+  }
+}, 1000);
+</script>
+	<!-- //Background function text -->
+<script>
+    function setbackground()
+      {
+      window.setTimeout( "setbackground()", 40); // milliseconds delay
+      
+      var index = Math.round(Math.random() * 9);
+      
+      var ColorValue = "#33cc33"; // default color - green (index = 0)
+      
+      if(index == 1)
+      ColorValue = "FFCCCC"; //peach
+      if(index == 2)
+      ColorValue = "#661aff"; //purple
+      if(index == 3)
+      ColorValue = "CCCCCC"; //grey
+      if(index == 4)
+      ColorValue = "99FFFF"; //cyan
+      if(index == 5)
+      ColorValue = "ffff00"; //yellow
+      if(index == 6)
+      ColorValue = "#FFFFFF"; // whiote
+      if(index == 7)
+      ColorValue = "#ff9966"; //tan
+      if(index == 8)
+      ColorValue = "FFCC99"; // orange
+      if(index == 9)
+      ColorValue = "#00e600"; //green
+      
+      document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+      
+      }
+</script>
+</head>
+<body onload="setbackground();">
+<br/><br/><div style="clear:both"></div><div><a target="_blank"><span style="font-size: 8pt; text-decoration: none"></span></a></div>
+</body>
+</html>

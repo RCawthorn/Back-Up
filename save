@@ -1,0 +1,21 @@
+<HTML>
+<form>
+Username:<input type="Text"><BR>
+Password:<input type = "text"><BR>
+input type "" value = "Login"<BR>
+</form>
+<script>
+function check(){
+var = 0;
+for(var i = 0;i<window.document.forms[0].elements.length;i++{
+if(window.document.forms[0].elementsi[].value=="";){
+empty++;
+}
+}
+window.alert(empty + "elements are empty");
+}
+</script>
+
+
+
+</HTML>

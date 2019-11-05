@@ -1,0 +1,14 @@
+  public class Number3 {
+    public static void main(String[] args) {
+            int num = 1234;
+            if (num > 500) {
+                System.out.print("A");
+                if (num > 1000) {
+                    System.out.print("B");
+                }
+
+            } else {
+                System.out.print("C");
+            }
+            return num;
+        }

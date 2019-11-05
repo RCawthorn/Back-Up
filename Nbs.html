@@ -1,0 +1,29 @@
+<html>
+<form>
+<input type = "button" value = "Login" id ="C" onclick = "changeColor()"><BR>
+</form>
+<script>
+function doSomething(){
+var X = window.event.clientX;
+var Y = window.event.clientY;
+var ref1=window.document.getElementById("nbs");
+ref1.style.top = Y;
+ref1.style.left = X;
+}
+</script>
+
+<script>
+function changeColor(){
+var ref=window.document.getElementById("C");
+document.body.style.background-Color= "orange";
+}
+</script>
+ <body style="background:cyan">
+ 
+<body onmousemove = "doSomething()">
+
+<span style ="position:absolute;top:0;left:0;color:green;font-size:60" id="nbs">
+<div style="background:black">
+Nationwide
+</div>
+</span>

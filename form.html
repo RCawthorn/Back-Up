@@ -1,0 +1,23 @@
+<html>
+<form action="Process.html" method="post" onsubmit="return checkValue()">
+Regno:<input type = "Text" id="Regno"name="Reg"><BR>
+Name:<input type = "Text" id="N"name="name">
+<input type="submit"><BR>
+</form>
+<script>
+function checkValue(){
+var Ref1 = document.getElementById("Regno");
+var Ref2 = document.getElementById("N");
+if(Ref1.value==""){
+alert("Regno is on fire");
+return false;
+}
+else if (Ref2.value ==""){
+alert("Your name sucks");
+return false;
+}
+}
+</script>
+
+
+</html> 

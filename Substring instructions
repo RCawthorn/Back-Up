@@ -1,0 +1,28 @@
+class Examstring msg="manchester";
+System.out.println(msg.lenth());
+
+msg.length();
+msg.substring(1,5);
+
+
+string msg = "Hello";
+int i;
+
+for(i=0,i<msg.length();i+=1){
+system.out.println(msg.substring(i,i+1);
+}
+
+
+
+class Stringpressing{
+
+ public void Printvertical(String msg){
+ int i;
+ for (i=0;i<mdg.length,i+=1){
+ system.out.println(msg.substring(i,i+1))
+ }
+ }
+ 
+ 
+ 
+ 

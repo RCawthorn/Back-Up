@@ -1,0 +1,222 @@
+<html>
+   <i class="fas fa-angry"></i>
+   <i class="fas fa-ambulance"></i>
+<div class="container" onclick="myFunction(this)" >
+<span style  ="position:absolute;top:180;left:180">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+</div>
+<!-- <audio controls> -->
+	<!-- <source src="C:\Users\ryan-\Downloads\Swooshing-SoundBible.com-1214884243.mp3" type="audio/mpeg"> -->
+
+<!-- </audio> -->
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+<style>
+.fas fa-ambulance{
+color:black;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+/*setting the colour and size of the menu bars and also the time of the animation */
+
+.bar1, .bar2, .bar3, .bar4 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 2.0s;
+}
+.bar2{
+background-color:grey;
+}
+.bar3{
+background-color:darkgrey;
+}
+ .bar4{
+   background-color:lightgrey;
+ }
+/*the angle of animation of lines for two of the bars. 
+setting one bar to go invisable */
+
+.change .bar1 {
+  -webkit-transform: rotate(360deg) translate(9px, 7px);
+  transform:rotate(360deg) translate(9px, 7px);
+  transition:2.5s;
+  background-color:black;
+}
+.change .bar2 {
+  -webkit-transform: rotate(360deg) translate(9px, 7px);
+  transform: rotate(360deg) translate(9px, 7px);
+
+  transition:2.2s;
+}
+.change .bar3 {
+  -webkit-transform: rotate(360deg) translate(9px, 7px);
+  transform: rotate(360deg) translate(9px, 7px);
+  transition:1.9s;
+
+}
+.change .bar4 {
+  -webkit-transform: rotate(360deg) translate(9px, 7px);
+  transform: rotate(360deg) translate(9px, 7px);
+  transition:1.2s
+  background-color:lightgrey;
+}
+
+
+}
+</style>
+
+<div class="container" onclick="myFunction(this)">
+<span style  ="position:absolute;top:280;left:180">
+  <div class="line1"></div>
+  <div class="line2"></div>
+  <div class="line3"></div>
+  <div class="line4"></div>
+</div>
+<style>
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+/*setting the colour and size of the menu bars and also the time of the animation */
+
+.line1, .line2, .line3, .line4 {
+  width: 50px;
+  height: 10px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 2.0s;
+}
+</style>
+
+
+
+
+
+<!-- box animations -->
+
+
+
+<div class="container" onclick="myFunction(this)">
+<span style  ="position:absolute;top:280;left:280">
+<figure class="box-2">Box 2</figure>
+<div class="original">
+  <div class="spin">
+    <figure class="box box-1">Box 1</figure>
+  </div>
+</div>
+<style>
+ 
+body {
+  color: Black;
+  margin: 12px 15px;
+}
+.original,
+.box {
+  border-radius: 6px;
+}
+.original {
+  background:Black;
+  border: 4px;
+  float: left;
+  margin: 12px 15px;
+}
+.box {
+  background: #ffd700;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  text-color:#FFF;
+  width: 95px;
+}
+.spin {
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.spin:hover {
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.box-1 {
+  transform: perspective(300px) translateZ(-50px);
+}
+
+body {
+  color: #fff;
+}
+
+.box-2 {
+  background: #2db34a;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.box-2:hover {
+  background: Blue;
+  border-radius: 60%;
+}
+
+</style>
+
+<a href="#">Wow</a>
+<style>
+a {
+position:absolute;
+left:76%;
+color: #fff;
+text-decoration: none;
+background-color: Orange;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+font-size: 40px;
+display: block;
+padding: 4px;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+box-shadow: 0px 10px 0px #1672b5, 0px 10px 30px #1672b5;
+-webkit-box-shadow: 0px 10px 0px #1672b5, 0px 10px 30px #1672b5;
+-moz-box-shadow: 0px 10px 0px #1672b5, 0px 10px 30px #1672b5;
+margin: 100px auto;
+text-align: center;
+transition: all .2s ease;
+-webkit-transition: all .2s ease;
+-moz-transition: all .2s ease;
+-ms-transition: all .2s ease;
+-o-transition: all .2s ease;
+}
+
+a:active {
+position:absolute;
+left 400px;
+-webkit-box-shadow: 0px 3px 0px #095e9c, 0px 9px 25px #095e9c;
+-moz-box-shadow: 0px 3px 0px #095e9c, 0px 9px 25px #095e9c;
+box-shadow: 0px 3px 0px #095e9c, 0px 9px 25px #095e9c;
+}
+</style>
+</head>
+</HTML>
+
